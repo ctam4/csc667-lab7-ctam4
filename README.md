@@ -10,7 +10,7 @@ Start by manually testing all servers
 # downloading redis mac/linux
 https://redis.io/download
 - cd to download dirctory
-- `make`
+- `make` (you need xcode develoepr tools)
 - `./src/redis-server`
 # Redis windows:
 - For windows : https://github.com/dmajkic/redis/downloads
@@ -24,3 +24,6 @@ https://redis.io/download
 
 # Dev purposes
 For dev mode, you can proxy the gateway behind react dev server (Needs websocket to work)
+
+# Cluster mode
+https://pm2.keymetrics.io/docs/usage/cluster-mode/
