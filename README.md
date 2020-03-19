@@ -12,6 +12,7 @@ https://redis.io/download
 - cd to download dirctory
 - `make` (you need xcode develoepr tools)
 - `./src/redis-server`
+- `./src/redis-cli` (for command line)
 # Redis windows:
 - For windows : https://github.com/dmajkic/redis/downloads
 
