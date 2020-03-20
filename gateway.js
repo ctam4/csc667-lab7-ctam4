@@ -14,21 +14,21 @@ app.all("/service1*", (req, res) => {
   // service1
   console.log(req.path)
   apiProxy.web(req, res, {
-    target: 'http://localhost:3001',
+    target: 'http://0.0.0.0:3001',
   });
 });
 
-app.all("/service2/*", (req, res) => {
+app.all("/service2*", (req, res) => {
   // service2
   apiProxy.web(req, res, {
-    target: 'http://localhost:3002',
+    target: 'http://0.0.0.0:3002',
   });
 });
 
 app.all("*", (req, res) => {
   // front end server / react
   apiProxy.web(req, res, {
-    target: 'http://localhost:3000',
+    target: 'http://0.0.0.0:3000',
   });
 });
 
